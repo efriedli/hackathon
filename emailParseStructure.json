@@ -1,0 +1,164 @@
+emailParseStructure.json
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "totalEmails": {
+            "type": "integer",
+            "description": "Total number of emails in the inbox"
+        },
+        "categories": {
+            "actionRequired": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/definitions/actionableEmail"
+                }
+            },
+            "dailySummary": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Date of the summary"
+                    },
+                    "summaryItems": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/summaryItem"
+                        }
+                    }
+                },
+                "required": [
+                    "date",
+                    "summaryItems"
+                ]
+            },
+            "events": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/definitions/eventDetails"
+                }
+            }
+        },
+        "additionalProperties": false
+    },
+    "definitions": {
+        "emailSummary": {
+            "type": "object",
+            "properties": {
+                "subject": {
+                    "type": "string",
+                    "description": "The subject line of the email"
+                },
+                "sender": {
+                    "type": "string",
+                    "description": "The email address of the sender"
+                },
+                "dateReceived": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The date and time when the email was received"
+                },
+                "hasAttachments": {
+                    "type": "boolean",
+                    "description": "Indicates if the email has attachments"
+                },
+                "summary": {
+                    "type": "string",
+                    "description": "A brief summary of the email content"
+                }
+            },
+            "required": [
+                "subject",
+                "sender",
+                "dateReceived",
+                "summary"
+            ],
+            "additionalProperties": false
+        },
+        "actionableEmail": {
+            "type": "object",
+            "properties": {
+                "subject": {
+                    "type": "string"
+                },
+                "actionRequired": {
+                    "type": "string",
+                    "description": "Description of the action required"
+                },
+                "deadline": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Deadline for the action"
+                }
+            },
+            "required": [
+                "subject",
+                "actionRequired",
+                "deadline"
+            ]
+        },
+        "summaryItem": {
+            "type": "object",
+            "properties": {
+                "subject": {
+                    "type": "string",
+                    "description": "Subject line of the email"
+                },
+                "sender": {
+                    "type": "string",
+                    "description": "Sender of the email"
+                },
+                "keyDetails": {
+                    "type": "string",
+                    "description": "Key details or outcomes from the email thread"
+                }
+            },
+            "required": [
+                "subject",
+                "sender",
+                "keyDetails"
+            ]
+        },
+        "eventDetails": {
+            "type": "object",
+            "properties": {
+                "eventType": {
+                    "type": "string",
+                    "description": "Type of the event, e.g., meeting, lunch, conference"
+                },
+                "participants": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "List of participants"
+                    }
+                },
+                "location": {
+                    "type": "string",
+                    "description": "Location of the event"
+                },
+                "time": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time of the event"
+                },
+                "details": {
+                    "type": "string",
+                    "description": "Additional details about the event"
+                }
+            },
+            "required": [
+                "eventType",
+                "participants",
+                "location",
+                "time"
+            ]
+        }
+    },
+    "required": [
+        "totalEmails",
+        "categories"
+    ]
+}
