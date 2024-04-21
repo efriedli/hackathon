@@ -1,0 +1,91 @@
+{
+  "totalEmails": 29,
+  "categories": {
+    "actionRequired": [
+      {
+        "subject": "RE: Dinner Monday, April 23",
+        "actionRequired": "Confirm attendance at dinner with Michael Holthouse and Matt Khourie on April 23rd at Capital Grille.",
+        "deadline": "2001-04-18T17:14:00"
+      },
+      {
+        "subject": "Houston Flood Relief Effort",
+        "actionRequired": "Consider donating to Houston flood relief efforts. Enron will match employee contributions dollar for dollar.",
+        "deadline": "2001-06-15"
+      },
+      {
+        "subject": "My Concerns",
+        "actionRequired": "Review and potentially address concerns raised by Denise Soo regarding Enron's contractor hiring practices.",
+        "deadline": null
+      },
+      {
+        "subject": "Moving forward: URGENT, URGENT.",
+        "actionRequired": "Review and discuss Partha Ghosh's proposal for moving forward with the ATT alliance, including fee structure and milestones.",
+        "deadline": null
+      }
+    ],
+    "dailySummary": {
+      "date": "2001-11-20",
+      "summaryItems": [
+        {
+          "subject": "KUDLOW'S TAKE -- National Review Online Financial -- September 7,",
+          "sender": "svarga@kudlow.com",
+          "keyDetails": "Analysis of the current economic climate and stock market performance, suggesting that Washington needs to implement more stimulative policies to promote economic recovery."
+        },
+        {
+          "subject": "Smith Graham",
+          "sender": "jim.newgard@enron.com",
+          "keyDetails": "Notification that the Enron Cash Balance Plan has retained Smith Graham to manage $15 million of pension assets."
+        },
+        {
+          "subject": "Weekend Outage Report for 10-5-01 through 10-7-01",
+          "sender": "40enron@enron.com",
+          "keyDetails": "Report detailing scheduled system outages for various Enron systems over the weekend of October 5th to 7th."
+        },
+        {
+          "subject": "FW: Marketing Off-site",
+          "sender": "dennis.vegas@enron.com",
+          "keyDetails": "Expression of gratitude for Jeff Skilling's participation in the Marketing off-site and his vision for the department's role."
+        },
+        {
+          "subject": "eSpeak Statistics",
+          "sender": "palmer@enron.com",
+          "keyDetails": "Update on the high participation and readership statistics for Jeff Skilling's recent eSpeak session."
+        }
+      ]
+    },
+    "events": [
+      {
+        "eventType": "Dinner",
+        "participants": [
+          "Jeff Skilling",
+          "Michael Holthouse",
+          "Matt Khourie",
+          "kcompton@kpcb.com",
+          "darnoff@greylock.com",
+          "johnt@austinventures.com"
+        ],
+        "location": "Capital Grille, 5365 Westheimer Road (Galleria area)",
+        "time": "2001-04-23T19:00:00",
+        "details": "Hosted by Michael Holthouse and Matt Khourie."
+      },
+      {
+        "eventType": "Dinner Boat Cruise",
+        "participants": [
+          "HBS Club members and guests"
+        ],
+        "location": "Star Cruiser yacht, Star Fleet Marina, 280 Grove Road, Kemah, TX",
+        "time": "2001-10-06T19:00:00",
+        "details": "Enjoy an evening out with dinner, music, and views of the sunset and Kemah lights."
+      },
+      {
+        "eventType": "Educational Seminar",
+        "participants": [
+          "Entrepreneurs and investors"
+        ],
+        "location": "Doubletree Hotel Houston, Post Oak - 2001 Post Oak Blvd",
+        "time": "2001-09-11T11:30:00",
+        "details": "Seminar on valuing your business and raising venture capital."
+      }
+    ]
+  }
+}
